@@ -1,0 +1,20 @@
+[project]
+name = "chatbot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "aram",email = "xboxaramxbox@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit (>=1.54.0,<2.0.0)",
+    "ollama (>=0.6.1,<0.7.0)"
+]
+
+[tool.poetry]
+packages = [{include = "chatbot", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
